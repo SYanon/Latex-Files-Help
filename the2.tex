@@ -1,0 +1,136 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{float}
+\usepackage{amsmath}
+
+
+\usepackage[hmargin=3cm,vmargin=6.0cm]{geometry}
+%\topmargin=0cm
+\topmargin=-2cm
+\addtolength{\textheight}{6.5cm}
+\addtolength{\textwidth}{2.0cm}
+%\setlength{\leftmargin}{-5cm}
+\setlength{\oddsidemargin}{0.0cm}
+\setlength{\evensidemargin}{0.0cm}
+
+
+\begin{document}
+
+\section*{Student Information } 
+%Write your full name and id number between the colon and newline
+%Put one empty space character after colon and before newline
+Full Name :  Saad Yousuf\\
+Id Number :  2349819\\
+
+% Write your answers below the section tags
+\section*{Answer 1}
+Q1\\
+a.)\\
+i.)$A \cap (B\cup C)$\\
+ii.)$(A \cap B)\cup C$\\
+iii.)$A \cap C$\\
+b.)\\
+i.)\\
+If $a \in A$, $b \in B$ and $c \in C$, then ($A$ X $B$) X $C$ is not equal to $A$ X($B$ X $C$) as {$(a,b),c$} is obviously and not equal to {$a,(b,c)$} as $(a,b)$ is not equal to $a$ and $c$ is not equal to $(b,c)$. However, it should be noted that there could be a bijection function related to both sets of the different sides of the equation, perhaps allowing the equality to be equal if if each set if of a different vector space which could combine in such way so as to allow the equality to be equal.\\
+
+ii.) iii.)\\
+\begin{table}[h]
+\small
+\centering
+\caption{Membership Table for Answer 1(b,ii), showing that $(A\cap B)\cap C = A \cap(B \cap C)$ is true.}
+\label{table:example}
+\begin{tabular}{|c|c|c|c|c|c|c}	%% specify column number and vertical lines
+\hline 							%% line draw
+\textbf{A} & \textbf{B} & \textbf{C} & \textbf{$A \cap B$} & \textbf{$B \cup C$} & \textbf{$(A \cap B)\cap C$} & \textbf{$A \cap (B \cap C)$}\\%%ask!!!!
+\hline 
+\hline 
+1 & 1 & 1 & 1 & 1 & 1 & 1 \\%% separate columns by &
+1 & 1 & 0 & 1 & 0 & 0 & 0 \\
+1 & 0 & 1 & 0 & 0 & 0 & 0 \\
+1 & 0 & 0 & 0 & 0 & 0 & 0 \\
+0 & 1 & 1 & 0 & 1 & 0 & 0 \\
+0 & 1 & 0 & 0 & 0 & 0 & 0 \\
+0 & 0 & 1 & 0 & 0 & 0 & 0 \\
+0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+\hline
+
+
+\end{tabular}
+\end{table}
+
+\begin{table}[h]
+\small
+\centering
+\caption{Membership Table for Answer 1(b,iii), showing that $(A\cap B)\cap C = A \cap(B \cap C)$ is true.}
+\label{table:example}
+\begin{tabular}{|c|c|c|c|c|c|c}	%% specify column number and vertical lines
+\hline 							%% line draw
+\textbf{A} & \textbf{B} & \textbf{C} & \textbf{$A \oplus B$} & \textbf{$B \oplus C$} & \textbf{$(A \oplus B)\oplus C$} & \textbf{$A \oplus (B \oplus C)$}\\%%ask!!!!
+\hline 
+\hline 
+1 & 1 & 1 & 0 & 0 & 1 & 1 \\%% separate columns by &
+1 & 1 & 0 & 0 & 1 & 0 & 0 \\
+1 & 0 & 1 & 1 & 1 & 0 & 0 \\
+1 & 0 & 0 & 1 & 0 & 1 & 1 \\
+0 & 1 & 1 & 1 & 0 & 0 & 0 \\
+0 & 1 & 0 & 1 & 1 & 1 & 1 \\
+0 & 0 & 1 & 0 & 1 & 1 & 1 \\
+0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+\hline
+\end{tabular}
+\end{table}
+
+\section*{Answer 2}
+a.)\\
+Note $f^-1 (f(A_0))={a\in A|f(a)\in f(A_0)}$ as per the given equality in the question.\\
+If $a \in A_0$, then $f(a) \in f(A_0)$ and thus, $a$ would be in $f^-1(f(A_0))$ or $(a \in f^-1(f(A_0)))$ so $A_0 \subseteq f^-1(f(A_0)).$\\
+Now, as $A_0 \subseteq f^-1(f(A_0))$,  hence assume that there exists a $b$ such that $b \in A_0$ so that $f(a)=f(b)$.\\
+But if $f$ is injective, then $a = b \in A_0$ and thus $A_0 = f^-1(f(A_0))$\\
+b.)\\
+Let $b \in B_0$, then by the given equality in the expression in the question, $f^-1(b) \in f^-1(B_0).$\\Thus $f(f^-1(B_0)) \in B_0$ OR $f(f^-1(B_0)) \subseteq B_0.$\\
+Let $b \in B_0$.$f(f^-1(B_0)) \subseteq B_0.$ so now we need to show that the converse is true as well, i.e.$B_0 \subseteq f(f^-1(B_0)).$\\
+If a surjective $f$ exists, then $\exists a \in A$ so $f(a)=b$(as $f$ is onto and every image will have atleast one preimage in the domain).\\
+Hence, $a \in f^-1(B_0)$.Thus,$b=f(a) \in f(f^-1(B_0))$, leading to $B_0 \subseteq f(f^-1(B_0)).$ as well.\\
+Therefore, then the equality  $B_0 = f(f^-1(B_0)).$ will hold if $f$ is surjective.\\
+
+
+
+\section*{Answer 3}
+Note $Z^+$ denotes the set of positive integers.\\If $A$ is countable, then by the definition on our book's Pg.171, the set that is either finite or has the same cardinality as the set of positive integers $Z^+$ is called countable.\\
+Definition 1 from Pg.171 states that to have the same cardinality(the one aforementioned), is a property that exists if and only if there is a one to one correspondence(or bijection from A to B, or in our case from $Z^+$ to $A$.Thus if 1. is true, there there is a one to one correspondence(otherwise known as a function which is a bijection) from $Z^+ to A$, which is also injective and surjective from $Z^+ to A$.\\ Therefore, 2. will be true as well, that there is indeed a bijective function from $Z^+ to A$.\\
+A bijective function will always have an inverse, but is that inverse function(let's say,$g$, such that $g$ (or it can also be denoted by $f^-1$ if $f$ is the original bijection function from $Z^+ to A$) can be injective or surjective).\\
+Let's atleast prove that this inverse function is surjective(it is also injective, but this hasn't been proved below):\\
+If there is an integer $x$ in $Z^+$ and an element $A_0$ in $A$, then $f(x) \in f(Z^+) = A$ then $x \in f^-1(A).$ If $y = f^-1(A)$ there there $\exists$ a $f(y) \in A$ so that $f^-1(f(y))=y \in Z^+$.\\
+So, $f^-1(A)=Z^+$ and $f^-1$ is surjective.\\
+Thus, 3.) is true as well as 2.) is true.\\
+3.)$\rightarrow$1.) too as due to this one to one correspondence, the cardinalities as equal i.e.$|Z^+| = |A|$ and thus 1.) is true too,i.e. A is countable.\\
+
+\section*{Answer 4}
+a.)\\
+The set of finite binary strings is countable as there are $2^n$ possible combinations of length n. Therefore, the union of all these combinations is countable too then(like $2^1 \cup 2^2 \cup 2^3$ and so on).\\
+b.)\\
+By Cantor's diagonal argument, this set is uncountable:\\
+Lets assume that set $D$ is our set of infinite binary strings and that it is countable. By Cantor's arguement, we can form a new string called $B$ such that it isn't in $D$. We can do this by defining our $B$ such that its $n$th digit is the opposite to the $n$th digit of a string $d$($d \in D$. LIke 1 instead of 0 and vice versa. This is a contradiction, as our $B$ string won't be in $D$.\\
+Now as $\exists B$, a string not present in $D$, thus the assumption that $D$ is countable(and listable) is wrong.\\
+
+
+
+\section*{Answer 5}
+a.)\\
+To prove that log n! is $\Theta(n.log n):$\\
+1.log n! should be $O(n.log n)$ AND\\
+2.log n! should be $\Omega(n.log n).$\\
+For 1.), note that: n! = 1.2.3. ... .n $<=$ n.n.n. ... .n=$n^n$\\
+Therefore, taking logarithms of both sides, $log (n!) <= n.log n$\\
+Thus,log n! is always $O(n.log n)$ \textit{for} $ n >1$\\
+As 1.) is true for $n>1$, thus 2.) cannot be true as $n^n$ will always be growing faster than n! for $n>1$, as n increases.\\
+As a result, log n! cannot be $\Theta (n.log n)$\\
+b.)\\
+As per Big-O's definition, $f(x)$ is $O(g(x))$ if $|f(x)| <= C.|g(x)|$ for $x>k$, where C and k are called witnesses.\\
+So, either $2^n$ is $O(n!)$ OR $n!$ is $O(2^n)$\\
+Considering the former case:\\
+For C=1 and k=4,\\
+$2^4 < 4!$, and as k increases,thus $n! > 2^n$\\
+Therefore, the second case is not possible, and thus $2^n$ is $O(n!)$. Hence, n! grows faster than $2^n$\\
+
+\end{document}

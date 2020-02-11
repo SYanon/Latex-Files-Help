@@ -1,0 +1,208 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{float}
+\usepackage{amsmath}
+
+
+
+\usepackage[hmargin=3cm,vmargin=6.0cm]{geometry}
+%\topmargin=0cm
+\topmargin=-2cm
+\addtolength{\textheight}{6.5cm}
+\addtolength{\textwidth}{2.0cm}
+%\setlength{\leftmargin}{-5cm}
+\setlength{\oddsidemargin}{0.0cm}
+\setlength{\evensidemargin}{0.0cm}
+
+%misc libraries goes here
+
+
+
+\begin{document}
+
+\section*{Student Information } 
+%Write your full name and id number between the colon and newline
+%Put one empty space character after colon and before newline
+Full Name : Saad Yousuf \\
+Id Number : 2349819 \\
+
+% Write your answers below the section tags
+\section*{Answer 1}
+
+
+\begin{table}[h]
+\small
+\centering
+\caption{Truth Table for Answer 1(a)}
+\label{table:example}
+\begin{tabular}{|c|c|c|c|}	%% specify column number and vertical lines
+\hline 							%% line draw
+\textbf{p} & \textbf{q} & \textbf{$q \rightarrow  \neg p$} & \textbf{$p \leftrightarrow q$} \\%%ask!!!!
+\hline 
+\hline 
+T & T & F & T \\			%% separate columns by &
+T & F & T & F \\
+T & F & T & F \\
+F & F & T & T \\
+\hline 
+
+\end{tabular}
+\end{table}
+
+
+
+\begin{table}[h]
+\small
+\centering
+\caption{Truth Table for Answer 1(b)}
+\label{table:example}
+\begin{tabular}{|c|c|c|c|c|c|c}	%% specify column number and vertical lines
+\hline 							%% line draw
+\textbf{p} & \textbf{q} & \textbf{r} & \textbf{p $\vee$ q} & \textbf{p$\rightarrow$r} & \textbf{q$\rightarrow$r} & \textbf{p $\vee$ q $\wedge$ p$\rightarrow$r $\wedge$ q$\rightarrow$r $\rightarrow$r} \\%%ask!!!!
+\hline 
+\hline 
+T & T & T & T & T & T & T \\			%% separate columns by &
+T & T & F & T & F & F & T \\
+T & F & T & T & T & T & T \\
+F & T & T & T & T & T & T \\
+F & F & T & F & T & T & T \\
+F & T & F & T & T & F & T \\
+T & F & F & T & F & T & T \\
+F & F & F & F & T & T & T \\
+\hline 
+
+\end{tabular}
+\end{table}
+
+\section*{Answer 2}
+\begin{table}[H]
+	\centering
+	\caption{Answer 4.}
+	\begin{tabular}{*4{l}}
+		$1$ & & $\neg p \rightarrow (q\rightarrow r) \equiv q \rightarrow (p \vee r)$ & \textit{Choosing the Left Hand Side} \\ 
+		$2$ & & $\neg(q \rightarrow r) \rightarrow \neg \neg p$ & \textit{Table 7, Line 2}\\
+		$3$ & & $\neg(\neg q \vee r) \rightarrow \neg \neg p$ & \textit{Table 7, line 1}\\
+		$4$ & & $(q \wedge \neg r) \rightarrow p$ & \textit{Table 6, Demorgan's Law 2, Double Negation Law } \\
+
+		$5$ & & $\neg(q \wedge \neg r) \vee p$ &\textit{Table 7, Line 1}\\ 
+		
+		$6$ & & $\neg q \vee r \vee p$ & \textit{Table 6, Demorgan's Law 1}\\
+		
+		$7$ & & $\neg q \vee (p \vee r)$ & \textit{Table 6, Commutative laws}\\ 
+		
+		$8$ & & $q \rightarrow(p \vee r)$ & \textit{Table 7, Line 1, Right Hand Side is obtained} \\
+	\end{tabular}
+\end{table}
+
+
+
+\section*{Answer 3}
+a.)
+$\forall x L(x,Buraq)$ \\
+b.)
+$\forall y L(Hazal,y)$ \\
+c.)
+$\forall x \exists y L(x,y)$ \\
+d.)
+$\forall x \exists y \neg L(x,y)$ \\
+e.)
+$\exists x \forall y L(x,y)$ \\
+f.)
+$\forall x (\neg L(x,Burak) \vee \neg L(x,Mustafa)) $ \\
+g.)
+$\exists y \exists z (L(Ceren,y) \wedge L(Ceren,z) \wedge y \ne z)$ \\
+h.)
+$\forall x \exists y(L(x,y) \wedge \forall z(L(x,z)\rightarrow z=y)$ \\
+i.)
+$\forall x \neg L(x,x)$ \\
+j.)
+$\exists x \exists y (L(x,y) \wedge ((x=y) \vee (x \ne y)))$ \\
+
+\section*{Answer 4}
+\begin{table}[H]
+	\centering
+	\caption{Answer 4.}
+	\begin{tabular}{*4{l}}
+		$1$ & & $p$ & \textit{premise} \\ 
+		$2$ & & $p\rightarrow (r \rightarrow q)$ & \textit{premise}\\
+		$3$ & & $q \rightarrow s$ & \textit{premise}\\
+		$4$ & & $r \rightarrow q$ & \textit{$\rightarrow e  1,2$ } \\
+		\hline \hline     %double hline call for the outer
+
+		$5$ & & $\neg q$ &\textit{assumption}\\ 
+		\hline
+		
+		$6$ & & $r$ & \textit{assumption}\\
+		
+		$7$ & & $q$ & $\rightarrow$e $4,6$\\ 
+		
+		$8$ & & $\bot$ & $\neg$e $5,7$\\ 
+		\hline
+		$9$ & & $\neg r$ & $\neg$i $6-8$ \\  
+		
+		$10$ & & $s \vee \neg r$ & $\vee$i $9$ \\  
+		\hline \hline                               %double hline call for the outer
+		
+		$11$ & & $\neg q \rightarrow(s\vee \neg r)$ & $\rightarrow$i $5-10$ \\
+		
+	\end{tabular}
+\end{table}
+
+\section*{Answer 5}
+\begin{table}[H]
+	\centering
+	\caption{Answer 5.}
+	\begin{tabular}{*4{l}}
+		$1$ & & $\forall x(p(x) \rightarrow q(x))$ & \textit{premise} \\ 
+		$2$ & & $\neg \exists z r(z)$ & \textit{premise}\\
+		$3$ & & $ \exists y p(y) \vee r(a) $ & \textit{premise}\\
+		
+		\hline \hline     %double hline call for the outer
+		
+		$4$ & & $\exists y p(y)$ & \textit{assumption} \\
+		\hline
+
+		$5$ & & $n$ $p(n)$ & \textit{assumption}\\ 
+		
+		$6$ & & $p(n) \rightarrow q(n)$ & \textit{$\exists$e 1,5}\\
+		
+		$7$ & & $q(n)$ & \textit{$\rightarrow$e 5,6}\\ 
+		
+		\hline
+		
+		$8$ & & $\exists z q(z)$ & \textit{$\exists$i 5-7}\\ 
+		\hline \hline
+		\\		
+		
+		\hline \hline \hline \hline
+		$9$ & & $r(a)$ & \textit{assumption} \\  
+		$10$ & & $\neg \exists z r(z)$ & \textit{copied 2} \\  
+		
+		\hline \hline \hline
+		
+		$11$ & & $\neg \forall z \neg r(z)$ & \textit{assumption} \\  
+		
+		\hline \hline 
+		$12$ & & $z_0$ & \textit{assumption} \\ 
+		\hline
+		$13$ & & $\neg r(z_0)$ & \textit{assumption} \\
+		$14$ & & $\forall z \neg r(z)$ & \textit{$\forall z$i 13} \\
+		$15$ & & $\bot$ & \textit{$\neg$e 11,14} \\
+		\hline
+		%%ASK Gunes Hoca WHAT TO DO HERE
+		$16$ & & $r(z_0)$ & \textit{Proof by Contradiction, 13-15} \\
+		\hline \hline
+		$17$ & & $\forall z r(z)$ & \textit{$\forall z$i 12-16} \\
+		$18$ & & $\bot$ & \textit{$\forall z$i 12-16} \\
+		\hline \hline \hline
+		$19$ & & $\forall z \neg r(z)$ & \textit{Proof by Contradiction 10-18} \\
+		$20$ & & $\bot$ & \textit{$\neg$e 9,19} \\
+		\hline \hline \hline \hline
+		$21$ & & $p(z)$ & \textit{$\bot$e 20} \\
+		$22$ & & $q(z)$ & \textit{$\rightarrow$e 1,20} \\
+		$23$ & & $\exists zq(z)$ & \textit{$\exists$i 22} \\
+		
+	\end{tabular}
+\end{table}
+
+\end{document}
